@@ -80,7 +80,7 @@
     </div>
     <div class="thumb">
       <div class="bg-black" data-title="Taxi Trips in NYC" data-name="TripsLayer">
-        <a href="#/examples/custom-layers/trip-routes">
+        <a href="#/examples/core-layers/trips-layer">
           <img src="images/demo-thumb-trip.jpg" />
         </a>
         </div>
@@ -91,9 +91,16 @@
 
 <div>
   <div class="thumb">
-    <div data-title="US County-to-County Migration" data-name="BrushingLayer">
+    <div data-title="US County-to-County Migration" data-name="BrushingExtension">
       <a href="#/examples/custom-layers/brushing-layer">
         <img src="images/demo-thumb-brushing.jpg" />
+      </a>
+    </div>
+  </div>
+  <div class="thumb">
+    <div data-title="40 Years of Earthquakes" data-name="DataFilterExtension">
+      <a href="#/examples/custom-layers/data-filter">
+        <img src="images/demo-thumb-data-filter.jpg" />
       </a>
     </div>
   </div>
