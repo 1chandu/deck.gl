@@ -130,9 +130,12 @@ function decodeTrip(str, segments) {
     endTime: endTime,
     segments: segs.reduce(function (acc, seg, i) {
       var t0 = projectedTimes[i];
-      return acc.concat(seg.map(function (s) {
-        return [s[0], s[1], (s[2] + t0) * rT + startTime];
-      }));
+      seg.forEach(function (s, j) {
+        if (i === 0 || j > 0) {
+          acc.push([s[0], s[1], (s[2] + t0) * rT + startTime]);
+        }
+      });
+      return acc;
     }, [])
   };
 }
